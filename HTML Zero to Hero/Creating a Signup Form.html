@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp</title>
+
+    <style>
+      div{
+        margin: 0.3rem;
+        font-size: 1.2rem;
+      }
+      select{
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form" action="Creating a Signup Form.html" method="post">
+      <h1>Sign Up</h1>
+      <div class="">
+        <label>Full Name</label><br>
+        <input type="text" name="name">
+      </div>
+      <div class="">
+        <label>Email</label><br>
+        <input type="email" name="email">
+      </div>
+      <div class="">
+        <label>Password</label> <br>
+        <input type="password" name="password">
+      </div>
+      <div class="">
+        <label>Confirm Password</label><br>
+        <input type="password" name="confirm-password">
+      </div>
+      <div class="">
+        <label>Gender</label><br>
+        <input type="radio" name="male" value="male">Male</input>
+        <input type="radio" name="female" value="female">Female</input>
+        <input type="radio" name="other" value="other">Other</input>
+      </div>
+      <div class="">
+        <label>Security Qustion</label><br>
+        <select name="security-question">
+          <option value="favourite-pet">What is your Favourite Pet Name?</option>
+          <option value="nickname">What is your nickname?</option>
+          <option value="birth-place">Where were you born?</option>
+        </select>
+      </div>
+      <div class="">
+        <textarea name="answers" rows="8" cols="29"></textarea>
+      </div>
+      <div class="">
+        <input type="checkbox" name="accept-terms" value="accept">I agree to the terms & conditions</input>
+      </div>
+      <input type="submit" name="submit">
+    </form>
+  </body>
+</html>
