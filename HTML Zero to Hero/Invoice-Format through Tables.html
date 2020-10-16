@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+
+    <style>
+      body{
+        background-color: #ffd;
+      }
+      table{
+        width: 50%;
+        margin: 0 auto;
+        background-color: white;
+      }
+      table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td{
+        padding: 0.6rem;
+        font-size: 1.4rem;
+        text-align: left;
+      }
+      th{
+        background-color: lightskyblue;
+      }
+    </style>
+
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="3s">Invoice #12345ABC</th>
+        <th id="width200">16 Oct,2020</th>
+      </tr>
+      <tr>
+        <td colspan="2s"><b>Pay To:</b><br>The Tech Park<br>123 Willow Street<br>Bollyweird LA-5692</td>
+        <td colspan="2s"><b>Customer:</b><br>Atisam ul Haq<br>326 Room<br>Razi Hostel block 2<br>NUST Islamabad</td>
+      </tr>
+      <tr>
+        <th>Name/Description</th>
+        <th>Qty.</th>
+        <th>MRP</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Biryani</td>
+        <td>2</td>
+        <td>200</td>
+        <td>450</td>
+      </tr>
+      <tr>
+        <td>Khoya</td>
+        <td>2</td>
+        <td>100</td>
+        <td>350</td>
+      </tr>
+      <tr>
+        <th colspan="3s">SubTotal</th>
+        <td>800</td>
+      </tr>
+      <tr>
+        <th colspan="2s">Tax</th>
+        <td>10%</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <th colspan="3s">Grand Total</th>
+        <td>880</td>
+      </tr>
+    </table>
+  </body>
+</html>
