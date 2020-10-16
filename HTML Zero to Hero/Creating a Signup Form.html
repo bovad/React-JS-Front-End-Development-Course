@@ -5,41 +5,71 @@
     <title>SignUp</title>
 
     <style>
-      div{
-        margin: 0.3rem;
-        font-size: 1.2rem;
+      body{
+        background-color: lightblue;
+      }
+      h1{
+        text-align: center;
+      }
+      form{
+        background-color: white;
+        width: 30%;
+        margin: 0 auto;
+        font-size: 1.3rem;
       }
       select{
-        font-size: 1rem;
+        font-size: 16px;
       }
+      textarea{
+        box-shadow: 2px 4px;
+        border-radius: 5px;
+      }
+      .form-div{
+        margin: 0.5rem auto;
+      }
+      .input{
+        width: 100%;
+        padding: 0.1rem;
+      }
+      .center{
+        padding: 1rem;
+      }
+      .submit{
+        padding: 0.3rem;
+        font-size: 1.1rem;
+        border: 2px solid blue;
+        background-color: white;
+      }
+
     </style>
   </head>
   <body>
+    <h1>Sign Up</h1>
     <form class="form" action="Creating a Signup Form.html" method="post">
-      <h1>Sign Up</h1>
-      <div class="">
+      <div class="center">
+      <div class="form-div">
         <label>Full Name</label><br>
-        <input type="text" name="name">
+        <input class="input" type="text" name="name">
       </div>
-      <div class="">
+      <div class="form-div">
         <label>Email</label><br>
-        <input type="email" name="email">
+        <input class="input" type="email" name="email">
       </div>
-      <div class="">
+      <div class="form-div">
         <label>Password</label> <br>
-        <input type="password" name="password">
+        <input class="input" type="password" name="password">
       </div>
-      <div class="">
+      <div class="form-div">
         <label>Confirm Password</label><br>
-        <input type="password" name="confirm-password">
+        <input class="input" type="password" name="confirm-password">
       </div>
-      <div class="">
+      <div class="form-div">
         <label>Gender</label><br>
         <input type="radio" name="male" value="male">Male</input>
         <input type="radio" name="female" value="female">Female</input>
         <input type="radio" name="other" value="other">Other</input>
       </div>
-      <div class="">
+      <div class="form-div">
         <label>Security Qustion</label><br>
         <select name="security-question">
           <option value="favourite-pet">What is your Favourite Pet Name?</option>
@@ -47,13 +77,14 @@
           <option value="birth-place">Where were you born?</option>
         </select>
       </div>
-      <div class="">
-        <textarea name="answers" rows="8" cols="29"></textarea>
+      <div class="form-div">
+        <textarea name="answers" rows="8" cols="35"></textarea>
       </div>
-      <div class="">
+      <div class="form-div">
         <input type="checkbox" name="accept-terms" value="accept">I agree to the terms & conditions</input>
       </div>
-      <input type="submit" name="submit">
+      <input class="submit" type="submit" name="submit">
+    </div>
     </form>
   </body>
 </html>
