@@ -14,7 +14,8 @@
         font-size: 1.3rem;
       }
       caption{
-        caption-side: bottom; <!-- default is top -->
+        font-family: monospace;
+        font-size: 2rem;
       }
       th, td{
         padding: 0.5rem;
@@ -28,35 +29,59 @@
         display: flex;
         justify-content: center;
       }
-
+      #bold{
+        font-weight: bold;
+      }
     </style>
 
   </head>
   <body>
     <div class="center">
       <table>
-        <caption>Student University Data</caption>
+        <caption>First Year Schedule</caption>
         <tr>
-          <th>Name</th>
-          <th>Class</th>
-          <th>Department</th>
-          <th>University</th>
+          <th>FGDC</th>
+          <th>9-10</th>
+          <th>10-11</th>
+          <th>11-12</th>
+          <th>12-1</th>
+          <th>1-2</th>
         </tr>
         <tr>
-          <td>Hamid</td>
-          <td>BESE-9B</td>
-          <td>SEECS</td>
-          <td>NUST</td>
-        </tr><tr>
-          <td>Ahrar</td>
-          <td>BESE-9A</td>
-          <td>SEECS</td>
-          <td>NUST</td>
-        </tr><tr>
-          <td>Nadia</td>
-          <td>BSPhy-9B</td>
-          <td>SNS</td>
-          <td>NUST</td>
+          <td id="bold">Monday</td>
+          <td>English</td>
+          <td>Physics</td>
+          <td rowspan="5s">Break</td>
+          <td>Mathematics</td>
+          <td>Islamiyat</td>
+        </tr>
+        <tr>
+          <td id="bold">Tuesday</td>
+          <td>English</td>
+          <td>Biology</td>
+          <td>Computer Science</td>
+          <td>Islamiyat</td>
+        </tr>
+        <tr>
+          <td id="bold">Wednesday</td>
+          <td>Urdu</td>
+          <td>Physics</td>
+          <td>Mathematics</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td id="bold">Thursday</td>
+          <td>Physics</td>
+          <td>Computer Science</td>
+          <td>Pak Study</td>
+          <td>Islamiyat</td>
+        </tr>
+        <tr>
+          <td id="bold">Friday</td>
+          <td>Pak Study</td>
+          <td>Physics</td>
+          <td>Urdu</td>
+          <td>Computer Science</td>
         </tr>
       </table>
     </div>
