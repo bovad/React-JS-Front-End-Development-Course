@@ -29,7 +29,7 @@
       }
       .input{
         width: 100%;
-        padding: 0.1rem;
+        padding: 0.3rem 0.1rem;
       }
       .center{
         padding: 1rem;
@@ -48,20 +48,16 @@
     <form class="form" action="Creating a Signup Form.html" method="get">
       <div class="center">
       <div class="form-div">
-        <label>Full Name</label><br>
-        <input class="input" type="text" name="name">
+        <input class="input" type="text" name="name" placeholder="Your Full Name" autofocus>
       </div>
       <div class="form-div">
-        <label>Email</label><br>
-        <input class="input" type="email" name="email">
+        <input class="input" type="email" name="email" placeholder="Your Email">
       </div>
       <div class="form-div">
-        <label>Password</label> <br>
-        <input class="input" type="password" name="password">
+        <input class="input" type="password" name="password" placeholder="Password">
       </div>
       <div class="form-div">
-        <label>Confirm Password</label><br>
-        <input class="input" type="password" name="confirm-password">
+        <input class="input" type="password" name="confirm-password" placeholder="Confirm Password">
       </div>
       <div class="form-div">
         <label>Gender</label><br>
@@ -71,7 +67,7 @@
       </div>
       <div class="form-div">
         <label>Security Qustion</label><br>
-        <select name="security-question">
+        <select name="security-question" multiple>
           <option value="favourite-pet">What is your Favourite Pet Name?</option>
           <option value="nickname">What is your nickname?</option>
           <option value="birth-place">Where were you born?</option>
