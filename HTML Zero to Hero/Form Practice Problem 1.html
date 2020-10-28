@@ -8,78 +8,78 @@
 			background-color: rgba(0,0,0,0.1);
 		}
 
-		section{
-			background-color: white;
-			padding: 1px;
+		form{
 			width: 40%;
-			height: 100vh;
+			background-color: white;
 			margin: 0 auto;
+			border: 1px solid lightgray;
+			padding-bottom: 20px;
 		}
 
-		.heading{
+		h2{
 			text-align: center;
-			height: auto;
-			padding-top: 40px;
+			padding-top: 50px;
 			padding-bottom: 10px;
 		}
 
-		.companies{
-			background-color: rgba(0,0,0,0.1);
+		.social-links{
 			text-align: center;
+			background-color: rgba(0,0,0,0.1);
+			padding: 20px;
 		}
 
 		img{
 			width: 50px;
-			height: auto;
-			margin: 25px 30px;
+			height: 50px;
+			padding: 15px 30px;
 		}
 
-		form{
+		.form-data{
 			margin: 50px;
-			font-size: 1.2rem;
 		}
 
 		.input{
 			border: none;
-			border-bottom: 1px solid lightgrey;
-			padding: 10px;
+			border-bottom: 1px solid lightgray;
+			padding-bottom: 5px;
+			padding-top: 25px;
 			width: 100%;
+			outline: none;
 		}
 
-		.btn-div{
+		.submit{
 			text-align: center;
-			margin: 20px;
+			margin: 30px;
 		}
 
 		.btn{
 			background-color: blue;
 			color: white;
 			border: none;
-			padding: 10px;
+			padding: 10px 20px;
 		}
+
 
 	</style>
 </head>
 <body>
-	<section>
-		<div class="heading">
-			<h2>Register</h2>	
-		</div>
-		<div class="companies">
+	<form>
+		<h2>Register</h2>
+		<div class="social-links">
 			<a href="https://www.google.com"><img src="https://lh3.googleusercontent.com/proxy/efZs0VGCJ7LQk-opmsCckmLUf3pA6DHzO1kmqB--j1gZ8ZYA8FtHzEc8rfshYGIx9dXPMOpG_MioDQodld9OdIF5R8d2ynCfE8x2hPIC7ZCuJgKzz9c"></a>
 			<a href="https://www.facebook.com"><img src="https://play-lh.googleusercontent.com/ccWDU4A7fX1R24v-vvT480ySh26AYp97g1VrIB_FIdjRcuQB2JP2WdY7h_wVVAeSpg=s180-rw"></a>
 			<a href=""><img src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/29-512.png"></a>
 			<a href=""><img src="https://lh3.googleusercontent.com/proxy/KmMBhkTxCvX1evdjt1LGT4YioTP80lM1uxYk52WN9D8Lxd6m-tx_Iio0gylhegL9rlaKeGy0pbytW6Z9TRBXYc8AJ55anGWNi_78w8LRZKloifQAdeFmNjwubWF4VZGSKw"></a>
 		</div>
-		<form>
+		<div class="form-data">
 			<input type="text" name="username" placeholder="Username" class="input"><br>
-			<input type="text" name="username" placeholder="Username" class="input"><br>
-			<input type="text" name="username" placeholder="Username" class="input"><br>
-			<input type="text" name="username" placeholder="Username" class="input"><br>
-			<div class="btn-div">
-				<input type="submit" name="register" value="Register" class="btn">		
+			<input type="email" name="email" placeholder="Email" class="input"><br>
+			<input type="password" name="password" placeholder="Password" class="input"><br>
+			<input type="password" name="confirm-password" placeholder="Confirm Password" class="input"><br>
+			<div class="submit">
+				<input type="submit" name="submit" value="Register" class="btn">
 			</div>
-		</form>
-	</section>
+		</div>
+	</form>
 </body>
 </html>
