@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour The World</title>
+
+    <style media="screen">
+      body{
+        font-family: sans-serif;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      header{
+        padding: 2rem;
+      }
+      table{
+        margin: 0 auto;
+      }
+      td{
+        padding: 0.2rem 2rem;
+      }
+      a{
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        padding-bottom: 0.5rem;
+      }
+      a:hover{
+        border-bottom: 2px solid grey;
+      }
+      h1{
+        text-align: center;
+        padding-top: 2rem;
+      }
+      section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      article{
+        background-color: white;
+        margin: 1rem;
+        text-align: center;
+        cursor: pointer;
+      }
+      article p{
+        pading: 1rem;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <table>
+        <tr>
+          <td><a href="#">Trip</a></td>
+          <td><a href="#">About</a></td>
+          <td><a href="#">Contact</a></td>
+        </tr>
+      </table>
+    </header>
+
+    <main>
+      <div class="main-page">
+        <img width="100%" height="auto"src="https://www.axistechnolabs.com/images/services/tour-travel-bnnr.jpg" alt="tour">
+      </div>
+      <h1>My Travel Diary</h1>
+      <section class="main-page">
+        <article class="faisal-mosque">
+          <a href="#" onclick="article()">
+            <div class="img">
+              <img width= "400px" height = "300px"src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="Northern Area">
+            </div>
+            <p>Northern Area, Pakistan</p>
+          </a>
+        </article>
+        <article class="northern-area">
+          <a href="">
+            <div class="img">
+              <img width= "400px" height = "300px"src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="Northern Area">
+            </div>
+            <p>Northern Area, Pakistan</p>
+          </a>
+        </article>
+        <article class="northern-area">
+          <a href="">
+            <div class="img">
+              <img width= "400px" height = "300px"src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="Northern Area">
+            </div>
+            <p>Northern Area, Pakistan</p>
+          </a>
+        </article>
+        <article class="northern-area">
+          <div class="img">
+            <img width="400px" height = "300px"src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="Northern Area">
+          </div>
+          <p>Northern Area, Pakistan</p>
+        </article>
+        <article class="northern-area">
+          <a href="">
+            <div class="img">
+              <img width= "400px" height = "300px"src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="Northern Area">
+            </div>
+            <p>Northern Area, Pakistan</p>
+          </a>
+        </article>
+        <article class="northern-area">
+          <a href="">
+            <div class="img">
+              <img width= "400px" height = "300px"src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="Northern Area">
+            </div>
+            <p>Northern Area, Pakistan</p>
+          </a>
+        </article>
+      </section>
+
+      <section class="article">
+        <img src="https://i.dawn.com/large/2015/12/567d216a2af1c.jpg" alt="back">
+        <div class="text">
+          <h2>Northern Area</h2>
+          <p>Gilgit-Baltistan (Urdu: گِلگِت بَلتِسْتان‎[citation needed], Balti, formerly known as the Northern Areas,[11] is a region administered by Pakistan as an administrative territory, and constituting the northern portion of the larger Kashmir region which has been the subject of a dispute between India and Pakistan since 1947, and between India and China from somewhat later.[12] It is the northernmost territory administered by Pakistan.[1] It borders Azad Kashmir to the south, the province of Khyber Pakhtunkhwa to the west, the Wakhan Corridor of Afghanistan to the north, the Xinjiang region of China, to the east and northeast, and the Indian-administered union territories Jammu and Kashmir and Ladakh to the southeast.
+
+Gilgit-Baltistan is part of the greater Kashmir region, which is the subject of a long-running conflict between Pakistan and India. The territory shares a border with Azad Kashmir, together with which it is referred to by the United Nations and other international organisations as "Pakistan administered Kashmir".[1][note 1] Gilgit-Baltistan is six times the size of Azad Kashmir.[17] The territory also borders Indian-administered union territories Jammu and Kashmir (union territory) and Ladakh to the south and is separated from it by the Line of Control, the de facto border between India and Pakistan.</p>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      function trip(){
+        document.getElementById("main-page").style.display = "none";
+        document.getElementById("article").style.display = "initial";
+      }
+      function about(){
+        document.getElementById("main-page").style.display = "none";
+        document.getElementById("about").style.display = "initial";
+      }
+      function contact(){
+        document.getElementById("main-page").style.display = "none";
+        document.getElementById("about").style.display = "initial";
+      }
+    </script>
+  </body>
+</html>
