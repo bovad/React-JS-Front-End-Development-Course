@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Positioning Elements</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h2{
+            padding: 10px;
+            margin: 0;
+        }
+        .position{
+            background-color:lightcyan;
+            height: 120vh;
+            position: relative;
+        }        
+        #red{
+            background-color: red;
+            position: sticky;
+            top: 0;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <h1>Position Elements</h1>
+        <div>
+            <h2 id="red">Red</h2>
+            <h2 id="green">Green</h2>
+            <h2 id="blue">Blue</h2>
+        </div>
+    </div>
+</body>
+</html>
