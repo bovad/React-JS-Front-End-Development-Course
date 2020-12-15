@@ -8,3 +8,19 @@ if(length * width == length * length){
 }else{
     console.log("Rectangle")
 }
+
+// Question 02
+
+console.clear()
+var num1 = 5
+var num2 = 8
+var num3 = 2
+var max = num1
+if(num2 > num1){
+  max = num2
+}
+if(num3>num2){
+  max = num3
+}
+
+console.log(max)
