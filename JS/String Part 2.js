@@ -1,3 +1,5 @@
+// PRACTICE PROBLEMS
+
 // Question 01
 
 var str1 = "Today is"
