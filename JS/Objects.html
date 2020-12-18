@@ -1,0 +1,30 @@
+// Question 01
+<script>
+console.clear()
+var customers_data={
+  'Ben10': [22, 30, 11, 17, 15, 52, 27, 12],
+  'Sameer': [5, 17, 30, 33, 40, 22, 26, 10, 11, 45],
+  'Zeeshan': [22, 30, 11, 5, 17, 30, 6, 57]
+}
+
+var len = customers_data.length
+var b = customers_data.Ben10;
+var s = customers_data.Sameer;
+var z = customers_data.Zeeshan;
+var a=[b,s,z]
+for (let j=0; j<a.length; j++) {
+  var count=0
+  for (let i=0; i<a[j].length; i++){
+    s[i] > 20 ? count ++ : "";
+    if(count > 5){
+      console.log(a[j]+" got Premium Membership!")
+      break
+    }
+  }
+}
+
+</script>
+
+
+// Question 02
+
