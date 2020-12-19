@@ -13,4 +13,27 @@
     console.log("Element found: Yes")
     else
     console.log("Element found: No")
+
+    // Question 03
+    function isequal(arr1, arr2){
+        let bool = true
+        console.log("Set Arr: ",arr1)
+        console.log("Copy Arr: ",arr2)
+        for (let i=0;i<arr2.length;i++){
+            if(arr1[i] != arr2[i]){
+                bool = false
+                break
+            }
+        }
+        console.log(bool)
+        return bool
+    }
+    var testArray = [8,3,4,6,7,8,9]
+    var copyArr = [...testArray]
+    var setArr = new Set(testArray)
+    var carr = [...setArr]
+    if(isequal(carr,copyArr) && isequal(testArray.sort(), copyArr))
+        console.log(copyArr+" is a strictly increasing sequence")
+    else
+        console.log(copyArr+" is not a strictly increasing sequence")
 </script>
