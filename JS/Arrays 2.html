@@ -36,4 +36,19 @@
         console.log(copyArr+" is a strictly increasing sequence")
     else
         console.log(copyArr+" is not a strictly increasing sequence")
+
+
+    // Question 04
+    var coins = [25, 10, 5, 2, 1]
+    var ac = []
+    let amount = 67
+
+    for(let i=0; i<coins.length; i++){
+        if(amount>=coins[i]){
+            amount -= coins[i]
+            ac.push(coins[i])
+            i--;
+        }
+    }
+    console.log(ac)
 </script>
