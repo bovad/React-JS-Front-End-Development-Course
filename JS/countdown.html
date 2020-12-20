@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #back{
+            background-color:cornflowerblue;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+        }
+        #time{
+            font-size: 500px;
+            padding: 0;
+            margin: 0%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table id = "back">
+        <tr>
+            <td id = "time">10</td>
+        </tr>
+    </table>
+    <script>
+        var timeHtml = document.getElementById("time")
+        var time = timeHtml.innerHTML
+        var doc = document.getElementById("back")
+        var interval = setInterval(function(){
+            time = time > 0 ? time -1 : 10
+            doc.style.backgroundColor = time % 2 == 0 ? "cornflowerblue" : "yellow"
+            timeHtml.style.fontSize = time * 50 + "px"
+            timeHtml.innerHTML = time
+            if(time == 0){
+                timeHtml.innerHTML = "Time's Up"
+                timeHtml.style.fontSize = "200px"
+                clearInterval(interval)
+            }
+        },1000)
+    </script>
+</body>
+</html>
