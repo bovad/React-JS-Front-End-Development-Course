@@ -9,19 +9,21 @@
             margin: 0%;
         }
         #window{
-            background-color: cadetblue;
+            background-color: rgb(150, 21, 51);
             width: 100%;
             height: 100vh;
         }
-        #change-color-btn{
-            border: 5px solid white;
-            background-color: cadetblue;
+        #center{
             position: absolute;
-            color: white;
-            font-size: 26px;
-            padding: 0.7rem 1rem;
             top: 45%;
             left: 45%;
+        }
+        #change-color-btn{
+            border: 5px solid white;
+            background-color: rgb(150, 21, 51);
+            color: white;
+            font-size: 26px;
+            padding: 0.7rem 1rem;   
             cursor: pointer;
             outline: none;
         }
@@ -29,7 +31,9 @@
 </head>
 <body>
     <div id="window">
-        <button id="change-color-btn">Change Color</button>
+        <div id="center">
+            <input id="change-color-btn" type="button" value="Change Color">
+        </div>
     </div>
     <script>
         var btn = document.getElementById("change-color-btn")
@@ -41,7 +45,8 @@
             var x = getColor()
             var y = getColor()
             var z = getColor()
-            back.style.backgroundColor = "rgba("+x+","+y+","+z+")"
+            back.style.backgroundColor = "rgb("+x+","+y+","+z+")"
+            btn.style.backgroundColor = "rgb("+x+","+y+","+z+")"
         })
     </script>
 </body>
