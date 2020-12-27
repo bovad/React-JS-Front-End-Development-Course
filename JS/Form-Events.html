@@ -1,0 +1,40 @@
+<html>
+<head></head>    
+
+<body>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username"> <br>
+        <input type="password" id="password" placeholder="Password"> <br>
+        <input type="submit" id="login-btn" value="Submit">
+    </form>
+    
+    <script>
+        var login = document.getElementById("login-form");
+        var userName = document.getElementById("username");
+        var psd = document.getElementById("password");
+        psd.addEventListener("change", function(){
+            console.log("Password Updated")
+        })
+        userName.addEventListener("input", function(){
+            var uName = event.target.value
+            uName = uName.toUpperCase()
+            console.log(uName)
+            // Changed user input to Capital Letters
+            userName.value = uName
+        })
+        userName.addEventListener("focus", function(){
+            console.log("Username is Focused")
+        })
+        userName.addEventListener("blur", function(){
+            console.log("Username lost Focus")
+        })
+        login.addEventListener("submit", function(e){
+            alert('Submit Button Clicked')
+            // Prevents from loading the page. Actually it alters the functionalty of submit
+            e.preventDefault()
+        })
+    </script>
+</body>
+    
+</html>
+
