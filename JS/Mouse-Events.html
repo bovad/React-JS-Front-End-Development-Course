@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        main{
+            display: flex;
+            margin: 5rem 10rem;
+        }
+        button{
+            width: 10%;
+        }
+        div{
+            width: 15%;
+            margin: auto;
+            background-color:cornsilk;
+        }
+        #h2{
+            background-color: cornflowerblue;
+            padding: 10px;
+        }
+        #h1{
+            padding: 50px 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <main>
+        <div id="over">
+            <h2 id="h2">Mouseover Event</h2>
+            <h1 id="h1">0</h1>
+        </div>
+        <div id="enter">
+            <h2 id="h2">MouseEnter Event</h2>
+            <h1 id="h1">0</h1>
+        </div>
+        <div id="move">
+            <h2 id="h2">MouseMove Event</h2>
+            <h1 id="h1">0</h1>
+        </div>
+    </main>
+    
+    <script>
+        var btn = document.getElementById("btn")
+        btn.addEventListener("mousedown",function(){
+            console.log("Mouse is pressed")
+        })
+        btn.addEventListener("mouseup",function(){
+            console.log("Mouse is released")
+        })
+        btn.addEventListener("click",function(){
+            console.log("Mouse is clicked")
+        })
+        var div = document.getElementById("over")
+        var oc = 0
+        div.addEventListener("mouseover",function(){
+            oc += 1
+            var c = document.querySelector("#over > h1")
+            c.innerHTML = oc
+        })
+        
+        var div = document.getElementById("enter")
+        var ec = 0
+        div.addEventListener("mouseenter",function(){
+            ec += 1
+            var d = document.querySelector("#enter > h1")
+            d.innerHTML = ec
+        })
+
+        var div = document.getElementById("move")
+        var mc = 0
+        div.addEventListener("mousemove",function(){
+            mc += 1
+            var d = document.querySelector("#move > h1")
+            d.innerHTML = mc
+        })
+    </script>
+</body>
+</html>
