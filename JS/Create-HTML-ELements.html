@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating HTML Elements</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        div{
+            display: flex;
+        }
+        input{
+            font-size: 20px;
+            margin: 10px;
+            padding: 5px 10px;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        li{
+            background-color: white;
+            width: 400px;
+            font-size: 20px;
+            padding: 5px 10px;
+            margin: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div>
+            <input type="text" name="todo-item" id="todo-item" placeholder="Enter todo item">
+            <input type="button" name="add-item" id="add-item" value="Add List Item">
+        </div>
+        <ul type="none" id="todo-list">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+        </ul>
+    </main>
+
+    <script type="text/javascript">
+        var addItem = document.getElementById("add-item")
+        var todoItem = document.getElementById("todo-item")
+        var todoList = document.getElementById("todo-list")
+
+        var input = ''
+
+        todoItem.addEventListener('input', function(e){
+            input = e.target.value;
+        })
+
+        todoItem.addEventListener("keyup",function(e){
+            if(e.keyCode == 13){
+                addItemToList()
+            }
+        })
+
+        function addItemToList(){
+            if(input !== undefined && input !== null && input !== ''){
+                var newList = document.createElement("li");
+                var listItem = document.createTextNode(input);
+                newList.appendChild(listItem);
+                todoList.appendChild(newList)
+                todoItem.value = ''
+            }else{
+                alert('Empty Todo')
+            }
+        }
+
+        addItem.addEventListener("click",function(){
+            addItemToList();
+        })
+
+    </script>
+</body>
+</html>

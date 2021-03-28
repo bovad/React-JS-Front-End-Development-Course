@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var hasFlash = false
+        for(i=0; i<navigator.plugins.length;i++){
+            if(navigator.plugins[i].name.indexOf("Flash")>=0){
+                hasFlash=true
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        if(hasFlash){
+            document.write("You hav Flash")
+        }
+        else{
+            document.write("You don't have Flash")
+        }
+    </script>    
+</body>
+</html>
