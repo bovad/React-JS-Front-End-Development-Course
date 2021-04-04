@@ -1,11 +1,10 @@
 import React from 'react'
 
-const MyData = () => {
+const MyData = (props) => {
     return (
-        <div className="article">
-            <h1>Hamid Ayub</h1>
-            <p>Studying Software Engineering</p>
-            <p>National University of Sciences and Technology, Islamabad</p>
+        <div className={props.className} key={props.id}>
+            <h1 className="heading">{props.title}</h1>
+            <p> {props.description} </p>
         </div>
     )
 }

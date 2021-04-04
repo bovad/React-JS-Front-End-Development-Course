@@ -30,16 +30,22 @@ function App() {
 
   const arrIter = myArray.map((item) => {
     return (      
-      <div className="article" key = {item.id}>
-        <h1 className='heading'>{item.title}</h1>
-        <p>{item.description}</p>
-      </div>
+      // all the attributes are passed to the MyData module in myData in the form of key-value pair
+      <MyData className={'article'} id={item.id} title={item.title} description={item.description} />
+      
+      // The above code is converted to JS and is in the form:
+
+      // React.createElement(MyData, {
+      //   className: 'article',
+      //   id: item.id,
+      //   title: item.title,
+      //   description: item.description
+      // });
     )
   })
 
   return (
     <div className="App">
-      <MyData />
       {arrIter}
     </div>
   );
