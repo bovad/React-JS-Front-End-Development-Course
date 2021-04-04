@@ -1,4 +1,8 @@
 import './App.css';
+import MyData from './myData';
+import React from 'react';
+
+console.clear()
 
 function App() {
   const myArray = [
@@ -24,17 +28,18 @@ function App() {
     }
   ]
 
-  const arrIter = myArray.map(item => {
-      return (
-        <div className="article">
-          <h1 className='heading'>{item.title}</h1>
-          <p>{item.description}</p>
-        </div>
-      )
+  const arrIter = myArray.map((item) => {
+    return (      
+      <div className="article" key = {item.id}>
+        <h1 className='heading'>{item.title}</h1>
+        <p>{item.description}</p>
+      </div>
+    )
   })
+
   return (
     <div className="App">
-      <h1 className='heading'>Creating React Elements Dynamically</h1>
+      <MyData />
       {arrIter}
     </div>
   );
