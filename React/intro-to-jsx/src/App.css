@@ -1,12 +1,16 @@
-.heading{
+.App{
     text-align: center;
+}
+
+.heading{
     color: red;
 }
 
-.para{
-    border: 1px solid red;
-    width: 500px;
+.article{
+    border: 2px solid grey;
+    width: 80%;
     margin: auto;
-    padding: 50px;
-    box-shadow: 5px 5px 5px red inset
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
