@@ -1,5 +1,5 @@
 import './App.css';
-import{MyData, isArrayEmpty} from './myData';
+import{MyData, isArrayEmpty as isEmpty} from './myData';
 import React from 'react';
 
 console.clear()
@@ -28,7 +28,7 @@ function App() {
     }
   ]
 
-  const arrIter = isArrayEmpty( myArray) ? []: myArray.map((item) => {
+  const arrIter = isEmpty( myArray) ? []: myArray.map((item) => {
     return (      
       // all the attributes are passed to the MyData module in myData in the form of key-value pair
       <MyData className={'article'} id={item.id} title={item.title} description={item.description} />
