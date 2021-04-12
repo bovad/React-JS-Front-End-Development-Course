@@ -1,6 +1,6 @@
 import React from 'react'
 
-const isArrayEmpty = (props) => {
+export const isArrayEmpty = (props) => {
     if(props != null || props != undefined){
         console.log('Non-Empty Array')
         return false
@@ -9,7 +9,7 @@ const isArrayEmpty = (props) => {
     return true
 }
 
-const MyData = (props) => {
+export const MyData = (props) => {
     return (
         <div className={props.className} key={props.id}>
             <h1 className="heading">{props.title}</h1>
@@ -19,4 +19,4 @@ const MyData = (props) => {
 }
 
 
-export {MyData, isArrayEmpty};
+// export {MyData, isArrayEmpty};
