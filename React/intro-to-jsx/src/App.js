@@ -37,7 +37,7 @@ function App() {
 
       // React.createElement(MyData, {
       //   className: 'article',
-      //   id: item.id,
+      //   id: item.id,f
       //   title: item.title,
       //   description: item.description
       // });

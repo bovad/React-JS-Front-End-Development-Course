@@ -1,0 +1,16 @@
+.article{
+    border: 2px solid grey;
+    width: 90%;
+    margin: auto;
+    padding: 20px 50px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+@media only screen and (min-width: 992px){
+    .article{
+        width: 40%;
+        display: inline-block;
+        margin: 20px;
+    }
+}
