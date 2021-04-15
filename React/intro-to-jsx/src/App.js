@@ -1,11 +1,14 @@
 import './App.css';
 import{MyData, isArrayEmpty as isEmpty} from './myData';
-import React from 'react';
+import React, { Component } from 'react';
 
 console.clear()
 
-function App() {
-  const myArray = [
+class App extends Component {
+  state = {
+    show: true,
+  }
+  myArray = [
     {
       id: 1,
       title: 'Title 1',
@@ -28,7 +31,17 @@ function App() {
     }
   ]
 
-  const arrIter = isEmpty( myArray) ? []: myArray.map((item) => {
+  onClickHide = () => {
+    this.setState((prevState) => {
+      return(
+        {
+          show: !prevState.show
+        }
+      )    
+    })
+  }
+
+  arrIter = isEmpty( this.myArray) ? []: this.myArray.map((item) => {
     return (      
       // all the attributes are passed to the MyData module in myData in the form of key-value pair
       <MyData className={'article'} id={item.id} title={item.title} description={item.description} />
@@ -43,12 +56,16 @@ function App() {
       // });
     )
   })
-
-  return (
-    <div className="App">
-      {arrIter}
-    </div>
-  );
+  render(){
+    return (
+      <div className="App">
+        <button onClick={this.onClickHide}>{this.state.show ? 'Hide Blocks' : 'Show Blocks'}</button> <br/>  
+        {
+          this.state.show ? this.arrIter : null
+        }
+      </div>
+    );
+  }
 }
 
 export default App;
