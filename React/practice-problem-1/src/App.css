@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+header{
+  background-color: rgb(241, 241, 241);
+  min-height: 15vh;
+}
+img{
+  height: 7vh;
+  margin-top: 4vh;
+}
+.flex{
+  display: flex;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+section{
+  text-align: left;
+  width: 70%;
+}
+section h1{
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.btn{
+  border: none;
+  background-color: lightgray;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;  
+}
+.btn:hover{
+  background-color: grey;
+  color: white;
+}
+#buy{
+  background-color: rgba(14, 88, 88, 0.8);
+  color: white;
+}
+#buy:hover{
+  background-color: rgba(14, 88, 88, 1)
+}
+
+.watch-btn{
+  background: none;
+  outline: none;
+  margin-right: 10px;
+  border: none;
+}
+.watch-btn > img{
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+.watch-btn > img:hover{
+  border: 2px solid aqua;
+}
+
+@media (max-width: 1150px){
+  .main{
+    display: block;
+    margin: 0 100px;
+  }
+}

@@ -1,0 +1,10 @@
+.bigImage{
+    height: 70vh;
+    margin-left: 200px;
+}
+
+@media (max-width: 1150px){
+    .bigImage{
+        margin: 0;
+    }   
+}
