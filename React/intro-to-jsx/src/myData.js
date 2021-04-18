@@ -4,7 +4,7 @@ import React from 'react'
 import classes from './myData.module.css'
 
 export const isArrayEmpty = (props) => {
-    if(props != null || props != undefined){
+    if(props !== null || props !== undefined){
         console.log('Non-Empty Array')
         return false
     }
