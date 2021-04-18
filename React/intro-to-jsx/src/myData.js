@@ -17,6 +17,8 @@ export const MyData = (props) => {
         <div className={classes.article} key={props.id}>
             <h1 className="heading">{props.title}</h1>
             <p> {props.description} </p>
+            <p> Like Count : {props.likeCount}</p>
+            <button onClick={props.likeClick}>Like</button>
         </div>
     )
 }
